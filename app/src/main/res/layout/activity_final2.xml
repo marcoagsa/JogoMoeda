@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:background="@drawable/bk3"
+        android:id="@+id/bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Round"
+            android:textColor="#ffff091f"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:id="@+id/Lutador"
+            android:src="@drawable/lutador"
+            android:layout_alignTop="@+id/Round"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="135dp"
+            android:layout_height="145dp"
+            android:id="@+id/Android"
+            android:src="@drawable/android2"
+            android:scaleType="centerCrop"
+            android:layout_alignBottom="@+id/Lutador"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linhatabela"
+            android:background="#FF3FB55F"
+            android:layout_below="@+id/Android">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/Pregunta1"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#fffdfdfe"
+            android:background="#00000000"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/Android1"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#fffdfdfe"
+            android:background="#00000000"
+            android:gravity="right"
+            android:layout_marginRight="5dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linhatabela2"
+            android:background="#FF3FB55F"
+            android:layout_below="@+id/linhatabela">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/Pregunta2"
+            android:autoText="false"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#fffdfdfe"
+            android:background="#00000000"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/Android2"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#fffdfdfe"
+            android:background="#00000000"
+            android:gravity="right"
+            android:layout_marginRight="5dp" />
+        </TableRow>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/totalmoedas"
+        android:autoText="false"
+        android:textStyle="bold"
+        android:textSize="45dp"
+        android:textColor="#ffc90810"
+        android:background="#00000000"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/vj"
+        android:autoText="false"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="#ffff091f"
+        android:background="#00000000"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="180dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/Va"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="#ffff091f"
+        android:background="#00000000"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="180dp"
+        android:layout_marginRight="40dp" />
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linhatabela3"
+        android:layout_below="@+id/bg">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/BSair"
+            android:id="@+id/Sair2"/>
+
+        <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/Bjogar2"
+        android:id="@+id/JN"/>
+
+    </TableRow>
+
+</RelativeLayout>

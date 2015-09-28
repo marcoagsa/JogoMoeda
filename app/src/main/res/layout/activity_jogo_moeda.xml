@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#ffffffff">
+
+    <TextView
+        android:text="@string/Titulo"
+        android:layout_width="fill_parent"
+        android:textSize="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Titulo"
+        android:textColor="#ffc90810"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/Logo"
+        android:src="@drawable/coins"
+        android:layout_above="@+id/Bjogar"
+        android:layout_below="@+id/Titulo" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Bjogar"
+        android:id="@+id/Bjogar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="81dp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/BSair"
+        android:id="@+id/Bsair"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+    <TableRow android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ScoreButton"
+            android:src="@drawable/rating"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/FinalScore"
+            android:id="@+id/Score"
+            android:textColor="#ffc90810"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Sound"
+            android:id="@+id/Som"
+            android:showText="true"
+            android:typeface="serif"
+            android:textOff="ON"
+            android:textOn="OFF"
+            android:textSize="17sp"
+            android:textColor="#ffc90810"
+            android:textStyle="bold"
+            android:checked="false"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp" />
+
+    </TableRow>
+
+
+
+</RelativeLayout>

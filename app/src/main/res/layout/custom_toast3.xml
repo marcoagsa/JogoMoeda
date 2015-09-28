@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layout_custom"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+      <FrameLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content">
+
+        <ImageView
+             android:layout_width="105dp"
+             android:layout_height="100dp"
+             android:id="@+id/Android"
+             android:src="@drawable/coins" />
+
+    </FrameLayout>
+
+        <TextView
+            android:id="@+id/texttoast"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="#ffff091f"
+            android:layout_centerVertical="true"
+            android:textAlignment="center"
+            android:layout_marginLeft="100dp" />
+
+</RelativeLayout>

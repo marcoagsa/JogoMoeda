@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fight Coins</string>
+    <string name="Titulo">Fight Coins</string>
+    <string name="action_settings">Configurações</string>
+    <string name="title_activity_apostajh"></string>
+    <string name="title_activity_apostatotaljh"></string>
+    <string name="title_activity_final">Resultado</string>
+    <string name="title_activity_youwin">Ganhou</string>
+    <string name="title_activity_youlose">Perdeu</string>
+    <string name="pre1">Quantas Moedas Escondidas Têm?</string>
+    <string name="pre2">Qual a sua Aposta?</string>
+    <string name="preFinal">Quer Continuar a Jogar?</string>
+    <string name="BSair">Sair Jogo</string>
+    <string name="Bjogar">Jogar</string>
+    <string name="Bjogar2">Nova Jogada</string>
+    <string name="Round">Round</string>
+    <string name="GO">Jogo Acabou</string>
+    <string name="Score">Melhores Resultados </string>
+    <string name="ExitScore">Sair dos Resultados </string>
+    <string name="YouWin">Você Ganhou</string>
+    <string name="YouLose">Você Perdeu</string>
+    <string name="NobodyWon">Ninguém Ganhou</string>
+    <string name="PlayerCoins">Suas Moedas =  </string>
+    <string name="PlayerBet">Sua Aposta =  </string>
+    <string name="AndroidCoins">  = Android Moedas</string>
+    <string name="AndroidBet">  = Android Aposta</string>
+    <string name="FinalScore">Resultados</string>
+    <string name="Sound">Som</string>
+    <string name="Yes">Sim</string>
+    <string name="No">Não</string>
+    <string name="OK">OK</string>
+    <string name="BestScore">Melhores Resultados</string>
+    <string name="Continuar">Quer Continuar a Jogar?</string>
+</resources>

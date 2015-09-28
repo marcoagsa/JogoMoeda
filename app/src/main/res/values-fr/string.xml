@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fight Coins</string>
+    <string name="Titulo">Fight Coins</string>
+    <string name="action_settings">Paramètres</string>
+    <string name="title_activity_apostajh"></string>
+    <string name="title_activity_apostatotaljh"></string>
+    <string name="title_activity_final">Résultat</string>
+    <string name="title_activity_youwin">Won</string>
+    <string name="title_activity_youlose">Perdu</string>
+    <string name="pre1">Invisible combien de pièces ont ?</string>
+    <string name="pre2">Quel est votre pari ?</string>
+    <string name="preFinal">Vous voulez continuer à jouer ?</string>
+    <string name="BSair">Quitter le jeu</string>
+    <string name="Bjogar">Jouer</string>
+    <string name="Bjogar2">Relancer</string>
+    <string name="Round">Round</string>
+    <string name="GO">Fin du jeu</string>
+    <string name="Score">Ton Score</string>
+    <string name="ExitScore">Quitter Score</string>
+    <string name="YouWin">Tu As gagné</string>
+    <string name="YouLose">Tu As perdu</string>
+    <string name="NobodyWon">Pas de gagnants</string>
+    <string name="PlayerCoins">Vos pièces =  </string>
+    <string name="PlayerBet">Votre pari =  </string>
+    <string name="AndroidCoins">  = Android pièces</string>
+    <string name="AndroidBet">  = Android pari</string>
+    <string name="FinalScore">But</string>
+    <string name="Sound">Sonner</string>
+    <string name="Yes">Oui</string>
+    <string name="No">Non</string>
+    <string name="OK">OK</string>
+    <string name="BestScore">Meilleur Score</string>
+    <string name="Continuar">Vous voulez continuer à jouer ?</string>
+</resources>

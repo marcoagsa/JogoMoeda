@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff">
+
+    <TableRow android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TabelaJogoMoeda">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ScoreButton"
+            android:src="@drawable/rating"
+            android:layout_gravity="center"
+            android:adjustViewBounds="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Score"
+            android:id="@+id/Score"
+            android:textColor="#ffc90810"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:padding="3dp"
+            android:layout_gravity="center" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Sound"
+            android:id="@+id/Som"
+            android:showText="true"
+            android:typeface="serif"
+            android:textOff="ON"
+            android:textOn="OFF"
+            android:textSize="17sp"
+            android:textColor="#ffc90810"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"/>
+
+    </TableRow>
+
+
+    <TextView
+        android:text="@string/Titulo"
+        android:layout_width="fill_parent"
+        android:textSize="40sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Titulo"
+        android:textColor="#ffc90810"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_below="@+id/TabelaJogoMoeda"
+        android:gravity="center_horizontal" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/Logo"
+        android:src="@drawable/coins"
+        android:layout_below="@+id/Titulo"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/Bjogar" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Bjogar"
+        android:id="@+id/Bjogar"
+        android:layout_above="@+id/Bsair"
+        android:layout_margin="5dp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/BSair"
+        android:id="@+id/Bsair"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp" />
+
+
+
+
+</RelativeLayout>

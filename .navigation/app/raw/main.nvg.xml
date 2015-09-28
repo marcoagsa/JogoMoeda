@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigationModel
+  ns = "http://schemas.android.com?import=com.android.tools.idea.editors.navigation.model.*">
+  <locations  
+    class = "java.util.ArrayList">
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.jm.jogomoeda.AJ"/>
+      <point      
+        x = "2996"      
+        y = "216"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.jm.jogomoeda.MJ"/>
+      <point      
+        x = "2148"      
+        y = "268"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.jm.jogomoeda.Final"/>
+      <point      
+        x = "392"      
+        y = "588"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.jm.jogomoeda.JogoMoeda"/>
+      <point      
+        x = "1228"      
+        y = "224"/>
+    </statePointEntry>
+  </locations>
+</navigationModel>

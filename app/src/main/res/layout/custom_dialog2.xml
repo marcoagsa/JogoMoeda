@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabela"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="100dp"
+            android:id="@+id/Ivencedor"
+            android:background="@drawable/lutador"
+            android:layout_gravity="center"
+            android:layout_margin="5dp" />
+
+        <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/Data"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/Ivencedor"
+        android:layout_toEndOf="@+id/Ivencedor"
+        android:scrollbars="vertical"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#00a8a7" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linhatabela"
+        android:layout_below="@+id/tabela"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ExitScore"
+            android:id="@+id/PreFinal"
+            android:textStyle="bold"
+            android:textSize="15dp" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linhatabela">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/OK"
+            android:id="@+id/OK"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"/>
+
+
+    </TableRow>
+
+
+</RelativeLayout>

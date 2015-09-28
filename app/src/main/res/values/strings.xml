@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fight Coins</string>
+    <string name="Titulo">Fight Coins</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_apostajh"></string>
+    <string name="title_activity_apostatotaljh"></string>
+    <string name="title_activity_final">Result</string>
+    <string name="title_activity_youwin">Win</string>
+    <string name="title_activity_youlose">Lose</string>
+    <string name="pre1">How many hidden coins ?</string>
+    <string name="pre2">What is your bet ?</string>
+    <string name="preFinal">You want to continue playing ?</string>
+    <string name="BSair">Exit Game</string>
+    <string name="Bjogar">Play</string>
+    <string name="Bjogar2">Play Again</string>
+    <string name="Round">Round</string>
+    <string name="GO">Game Over</string>
+    <string name="Score">Your Score</string>
+    <string name="ExitScore">Exit Score</string>
+    <string name="YouWin">You Win</string>
+    <string name="YouLose">You Lose</string>
+    <string name="NobodyWon">Nobody Won</string>
+    <string name="PlayerCoins">Your Coins =  </string>
+    <string name="PlayerBet">Your Bet =  </string>
+    <string name="AndroidCoins">  = Android Coins</string>
+    <string name="AndroidBet">  = Android Bet</string>
+    <string name="FinalScore">Score</string>
+    <string name="Sound">Sound</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="OK">OK</string>
+    <string name="BestScore">Best Score</string>
+    <string name="Continuar">You want to continue playing ?</string>
+</resources>
