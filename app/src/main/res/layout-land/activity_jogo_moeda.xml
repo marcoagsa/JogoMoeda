@@ -11,6 +11,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/ScoreButton"
+            android:background="@null"
+            android:padding="10dp"
             android:src="@drawable/rating"
             android:layout_gravity="center"
             android:adjustViewBounds="false" />
@@ -39,7 +41,7 @@
             android:textColor="#ffc90810"
             android:textStyle="bold"
             android:layout_gravity="center"
-            android:layout_marginLeft="50dp"/>
+            android:layout_marginLeft="280dp"/>
 
     </TableRow>
 
@@ -70,6 +72,7 @@
         android:layout_height="wrap_content"
         android:text="@string/Bjogar"
         android:id="@+id/Bjogar"
+        android:background="@null"
         android:layout_above="@+id/Bsair"
         android:layout_margin="5dp" />
 
@@ -78,6 +81,7 @@
         android:layout_height="wrap_content"
         android:text="@string/BSair"
         android:id="@+id/Bsair"
+        android:background="@null"
         android:layout_alignParentBottom="true"
         android:layout_margin="5dp" />
 

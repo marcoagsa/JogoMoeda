@@ -35,6 +35,7 @@
         android:layout_height="wrap_content"
         android:text="@string/Bjogar"
         android:id="@+id/Bjogar"
+        android:background="@null"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="81dp" />
@@ -44,6 +45,7 @@
         android:layout_height="wrap_content"
         android:text="@string/BSair"
         android:id="@+id/Bsair"
+        android:background="@null"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="20dp" />
@@ -57,6 +59,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/ScoreButton"
             android:src="@drawable/rating"
+            android:background="@null"
+            android:padding="5dp"
             android:layout_gravity="center"/>
 
         <TextView
@@ -83,7 +87,7 @@
             android:textStyle="bold"
             android:checked="false"
             android:layout_gravity="center"
-            android:layout_marginLeft="25dp" />
+            android:layout_marginLeft="95dp" />
 
     </TableRow>
 
