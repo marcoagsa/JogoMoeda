@@ -36,7 +36,7 @@ public class AJ extends MJ {
 
 
         // mudar tipo de letra
-        Typeface TipoLetra = Typeface.createFromAsset(getAssets(), "fonts/Shoryuken.ttf");
+        Typeface TipoLetra = Typeface.createFromAsset(getAssets(),"fonts/Shadowofxizor.ttf");
         final TextView Preg2 = (TextView)findViewById(R.id.Pregunta2);
         Preg2.setTypeface(TipoLetra);
 

@@ -5,7 +5,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    android:background="#ffffffff">
+    android:background="@color/background_floating_material_dark">
 
 
 
@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:text="@string/FinalScore"
             android:id="@+id/Score"
-            android:textColor="#12bfe9"
+            android:textColor="@color/themeRed"
             android:textSize="15sp"
             android:textStyle="bold"
             android:layout_gravity="center" />
@@ -42,7 +42,7 @@
             android:textOff="ON"
             android:textOn="OFF"
             android:textSize="15sp"
-            android:textColor="#12bfe9"
+            android:textColor="@color/themeRed"
             android:textStyle="bold"
             android:checked="false"
             android:layout_gravity="center"
@@ -56,7 +56,7 @@
         android:textSize="50sp"
         android:layout_height="wrap_content"
         android:id="@+id/Titulo"
-        android:textColor="#12bfe9"
+        android:textColor="@color/themeRed"
         android:textAlignment="center"
         android:gravity="center_horizontal"
         android:layout_marginTop="90dp"
@@ -80,13 +80,14 @@
         android:text="@string/Bjogar"
         android:id="@+id/Bjogar"
         android:background="@null"
-        android:textColor="#12bfe9"
+        android:textColor="@color/themeRed"
         android:textSize="20sp"
         android:textStyle="bold"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="50dp"
-        android:singleLine="false" />
+        android:singleLine="false"
+        android:textColorLink="@color/highlighted_text_material_light" />
 
     <Button
         android:layout_width="fill_parent"
@@ -94,12 +95,13 @@
         android:text="@string/BSair"
         android:id="@+id/Bsair"
         android:background="@null"
-        android:textColor="#12bfe9"
+        android:textColor="@color/themeRed"
         android:textSize="20sp"
         android:textStyle="bold"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="05dp" />
+        android:layout_marginBottom="05dp"
+        android:textColorLink="@color/primary_material_light_1" />
 
 
 

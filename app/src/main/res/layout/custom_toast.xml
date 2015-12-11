@@ -3,7 +3,8 @@
         android:id="@+id/layout_custom"
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+    android:background="@color/background_floating_material_dark">
 
 
     <FrameLayout
@@ -24,8 +25,8 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:textSize="30dp"
-        android:textColor="#ffff091f"
+        android:textSize="25dp"
+        android:textColor="@color/themeRed"
         android:layout_centerVertical="true"
         android:layout_marginLeft="100dp" />
 

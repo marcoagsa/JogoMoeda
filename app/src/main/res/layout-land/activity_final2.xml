@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="#FFF">
+    android:background="@color/background_floating_material_dark">
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -18,7 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/Round"
-            android:textColor="#ffff091f"
+            android:textColor="@color/themeRed"
             android:textSize="15dp"
             android:textStyle="bold"
             android:layout_marginTop="50dp"
@@ -55,7 +55,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/linhatabela"
-            android:background="#FF3FB55F"
+            android:background="@color/primary_dark_material_dark"
             android:layout_below="@+id/ltabela">
 
         <TextView
@@ -87,7 +87,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/linhatabela2"
-            android:background="#FF3FB55F"
+            android:background="@color/primary_material_light_1"
             android:layout_alignParentBottom="false"
             android:layout_below="@+id/linhatabela">
 
@@ -120,11 +120,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
         android:id="@+id/totalmoedas"
         android:text="0"
         android:textStyle="bold"
-        android:textColor="#ffc90810"
+        android:textColor="@color/themeRed"
         android:background="#00000000"
         android:gravity="center_horizontal"
         android:layout_marginTop="135dp"
@@ -140,8 +139,8 @@
         android:layout_above="@+id/linhatabela3"
         android:layout_marginLeft="75dp"
         android:textStyle="bold"
-        android:textColor="#ffff091f"
-        android:background="#00000000"
+        android:textColor="@color/themeRed"
+        android:background="@null"
         android:padding="5dp" />
 
     <TextView
@@ -152,11 +151,13 @@
         android:text="0"
         android:textSize="30sp"
         android:layout_above="@+id/linhatabela3"
-        android:textColor="#ffff091f"
-        android:background="#00000000"
+        android:textColor="@color/themeRed"
         android:layout_alignParentEnd="false"
         android:padding="5dp"
-        android:layout_marginLeft="535dp" />
+        android:layout_marginLeft="535dp"
+        android:phoneNumber="false"
+        android:autoText="false"
+        android:background="@null" />
 
     <TableRow
         android:layout_width="fill_parent"
@@ -165,22 +166,22 @@
         android:layout_alignParentBottom="true">
 
         <Button
-            style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@null"
+            android:background="@color/button_material_dark"
             android:text="@string/BSair"
-            android:id="@+id/Sair2"/>
+            android:id="@+id/Sair2"
+            android:textColor="@color/themeRed" />
 
         <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
+            android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:text="@string/Bjogar2"
-            android:background="@null"
-        android:id="@+id/JN"/>
+            android:background="@color/material_blue_grey_800"
+        android:id="@+id/JN"
+            android:textColor="@color/themeRed" />
 
     </TableRow>
 
