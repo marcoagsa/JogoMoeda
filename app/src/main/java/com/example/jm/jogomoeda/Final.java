@@ -228,7 +228,7 @@ public class Final extends AJ {
             final Button Yes = (Button) teste.findViewById(R.id.Yes);
             final Button No = (Button) teste.findViewById(R.id.No);
 
-            Typeface TipoLetra = Typeface.createFromAsset(getAssets(), "Shoryuken.ttf");
+            Typeface TipoLetra = Typeface.createFromAsset(getAssets(), "fonts/Shoryuken.ttf");
             Vencedor.setTypeface(TipoLetra);
             Tentativa.setTypeface(TipoLetra);
 
@@ -267,7 +267,7 @@ public class Final extends AJ {
             final Button Yes = (Button) teste.findViewById(R.id.Yes);
             final Button No = (Button) teste.findViewById(R.id.No);
 
-            Typeface TipoLetra = Typeface.createFromAsset(getAssets(), "Shoryuken.ttf");
+            Typeface TipoLetra = Typeface.createFromAsset(getAssets(), "fonts/Shoryuken.ttf");
             Vencedor.setTypeface(TipoLetra);
             Tentativa.setTypeface(TipoLetra);
             Vencedor.setText(R.string.YouWin);
@@ -322,7 +322,7 @@ public class Final extends AJ {
         Intent getFinal = getIntent();
 
         // mudar tipo de letra
-        Typeface TipoLetra = Typeface.createFromAsset(getAssets(), "Shoryuken.ttf");
+        Typeface TipoLetra = Typeface.createFromAsset(getAssets(), "fonts/Shoryuken.ttf");
 
 
         final TextView Round = (TextView) findViewById(R.id.Round);

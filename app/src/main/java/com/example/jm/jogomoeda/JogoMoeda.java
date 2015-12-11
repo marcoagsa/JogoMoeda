@@ -6,8 +6,9 @@ import android.content.Intent;
 import android.graphics.Typeface;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
+import android.net.Uri;
+import android.support.annotation.ColorRes;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.method.ScrollingMovementMethod;
@@ -28,38 +29,38 @@ import java.io.OutputStreamWriter;
 
 public class JogoMoeda extends AppCompatActivity {
 
-    private void CriaScore (){
+    private void CriaScore() {
 
         File file = new File(getExternalFilesDir(null).getPath(), "/Score.txt");
-        if (file.exists()){
+        if (file.exists()) {
             Toast.makeText(getBaseContext(), "File Score Create", Toast.LENGTH_SHORT).show();
-        }else
+        } else
 
-        try {
-            File sdcard = new File (getExternalFilesDir(null).getPath());
+            try {
+                File sdcard = new File(getExternalFilesDir(null).getPath());
 
-            FileOutputStream fou = new FileOutputStream(sdcard + "/Score.txt");
-            OutputStreamWriter osw = new OutputStreamWriter(fou);
-            osw.append(getString(R.string.BestScore));
-            osw.append('\n');
-            osw.flush();
-            osw.close();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+                FileOutputStream fou = new FileOutputStream(sdcard + "/Score.txt");
+                OutputStreamWriter osw = new OutputStreamWriter(fou);
+                osw.append(getString(R.string.BestScore));
+                osw.append('\n');
+                osw.flush();
+                osw.close();
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
 
     }
 
-    public void AppExit(){
+    public void AppExit() {
         Intent intent = new Intent(Intent.ACTION_MAIN);
         intent.addCategory(Intent.CATEGORY_HOME);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }
 
-    private void SoundFithg () {
+    private void SoundFithg() {
 
         final MediaPlayer mPlayer;
         mPlayer = MediaPlayer.create(JogoMoeda.this, R.raw.fithg);
@@ -83,15 +84,22 @@ public class JogoMoeda extends AppCompatActivity {
 
 
         // Titulo do Jogo com o tipo de letra defenido
-        Typeface TipoLetra = Typeface.createFromAsset(getAssets(), "Shoryuken.ttf");
-        final TextView Titulo = (TextView)findViewById(R.id.Titulo);
+        Typeface TipoLetra = Typeface.createFromAsset(getAssets(),"fonts/Shadowofxizor.ttf");
+
+        TextView Titulo = (TextView) findViewById(R.id.Titulo);
+
         Titulo.setTypeface(TipoLetra);
+        Titulo.setTextSize(80);
 
         //Defenir os butões utilizados
-        final Button Bsair = (Button) findViewById(R.id.Bsair);
-        final Button Bjogar = (Button) findViewById(R.id.Bjogar);
-        final Switch Som = (Switch) findViewById(R.id.Som);
-        final ImageButton ScoreB = (ImageButton) findViewById(R.id.ScoreButton);
+        Button Bsair = (Button) findViewById(R.id.Bsair);
+        Button Bjogar = (Button) findViewById(R.id.Bjogar);
+        Bjogar.setTypeface(TipoLetra);
+        Bjogar.setTextSize(30);
+        Bsair.setTypeface(TipoLetra);
+        Bsair.setTextSize(30);
+        Switch Som = (Switch) findViewById(R.id.Som);
+         ImageButton ScoreB = (ImageButton) findViewById(R.id.ScoreButton);
         final AudioManager audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
         // Função do Switch Sound
@@ -120,16 +128,16 @@ public class JogoMoeda extends AppCompatActivity {
                 TextView Data = (TextView) teste.findViewById(R.id.Data);
                 Button Ok = (Button) teste.findViewById(R.id.OK);
 
-                Typeface TipoLetra = Typeface.createFromAsset(getAssets(), "Shoryuken.ttf");
+                Typeface TipoLetra = Typeface.createFromAsset(getAssets(), "fonts/Shoryuken.ttf");
                 Data.setTypeface(TipoLetra);
 
 
                 //Find the directory for the SD Card using the API
                 //*Don't* hardcode "/sdcard"
-                File sdcard = new File ((getExternalFilesDir(null).getPath()));
+                File sdcard = new File((getExternalFilesDir(null).getPath()));
 
                 //Get the text file
-                File file = new File(sdcard,"/Score.txt");
+                File file = new File(sdcard, "/Score.txt");
 
                 //Read text from file
                 StringBuilder text = new StringBuilder();
@@ -143,10 +151,9 @@ public class JogoMoeda extends AppCompatActivity {
                         text.append('\n');
                     }
                     br.close();
-                }
-                catch (IOException e) {
+                } catch (IOException e) {
                     //You'll need to add proper error handling here
-                    Toast.makeText(getBaseContext(),"Erro Read File", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getBaseContext(), "Erro Read File", Toast.LENGTH_LONG).show();
                 }
 
                 Data.setText(text);
@@ -175,10 +182,10 @@ public class JogoMoeda extends AppCompatActivity {
         Bsair.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               AppExit();
+                AppExit();
             }
         });
+       ;
     }
-
 
 }

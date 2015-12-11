@@ -42,7 +42,7 @@ public class MJ extends JogoMoeda {
             final int Tentativas = getFinal.getIntExtra("passTentativas",0);
 
             // mudar tipo de letra
-            Typeface TipoLetra = Typeface.createFromAsset(getAssets(), "Shoryuken.ttf");
+            Typeface TipoLetra = Typeface.createFromAsset(getAssets(), "fonts/Shoryuken.ttf");
             final TextView Preg1 = (TextView)findViewById(R.id.Pregunta1);
             Preg1.setTypeface(TipoLetra);
 
