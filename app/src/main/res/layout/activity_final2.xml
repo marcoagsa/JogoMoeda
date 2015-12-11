@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF">
+    android:background="@color/background_floating_material_dark">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -14,7 +14,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/Round"
-            android:textColor="#ffff091f"
+            android:textColor="@color/themeRed"
             android:textSize="15dp"
             android:textStyle="bold"
             android:layout_marginTop="60dp"
@@ -44,7 +44,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/linhatabela"
-            android:background="#FF3FB55F"
+            android:background="@color/primary_dark_material_dark"
             android:layout_below="@+id/Android">
 
         <TextView
@@ -78,7 +78,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/linhatabela2"
-            android:background="#FF3FB55F"
+            android:background="@color/primary_material_light_1"
             android:layout_below="@+id/linhatabela">
 
         <TextView
@@ -118,7 +118,7 @@
         android:autoText="false"
         android:textStyle="bold"
         android:textSize="45dp"
-        android:textColor="#ffc90810"
+        android:textColor="@color/themeRed"
         android:background="#00000000"
         android:gravity="center_horizontal"
         android:layout_marginTop="100dp"
@@ -132,7 +132,7 @@
         android:autoText="false"
         android:textStyle="bold"
         android:textSize="30dp"
-        android:textColor="#ffff091f"
+        android:textColor="@color/themeRed"
         android:background="#00000000"
         android:gravity="center_horizontal"
         android:layout_alignParentBottom="true"
@@ -147,7 +147,7 @@
         android:id="@+id/Va"
         android:textStyle="bold"
         android:textSize="30dp"
-        android:textColor="#ffff091f"
+        android:textColor="@color/themeRed"
         android:background="#00000000"
         android:gravity="center_horizontal"
         android:layout_alignParentBottom="true"
@@ -163,23 +163,22 @@
         android:layout_below="@+id/bg">
 
         <Button
-            style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@null"
+            android:background="@color/button_material_dark"
             android:layout_weight="1"
             android:text="@string/BSair"
-            android:id="@+id/Sair2"/>
+            android:id="@+id/Sair2"
+            android:textColor="@color/themeRed" />
 
         <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-            android:background="@null"
-        android:text="@string/Bjogar2"
-        android:id="@+id/JN"/>
-
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/material_blue_grey_800"
+            android:text="@string/Bjogar2"
+            android:id="@+id/JN"
+            android:textColor="@color/themeRed" />
     </TableRow>
 
 </RelativeLayout>

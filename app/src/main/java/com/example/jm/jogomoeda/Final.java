@@ -228,7 +228,7 @@ public class Final extends AJ {
             final Button Yes = (Button) teste.findViewById(R.id.Yes);
             final Button No = (Button) teste.findViewById(R.id.No);
 
-            Typeface TipoLetra = Typeface.createFromAsset(getAssets(), "fonts/Shoryuken.ttf");
+            Typeface TipoLetra = Typeface.createFromAsset(getAssets(),"fonts/Shadowofxizor.ttf");
             Vencedor.setTypeface(TipoLetra);
             Tentativa.setTypeface(TipoLetra);
 
@@ -267,7 +267,7 @@ public class Final extends AJ {
             final Button Yes = (Button) teste.findViewById(R.id.Yes);
             final Button No = (Button) teste.findViewById(R.id.No);
 
-            Typeface TipoLetra = Typeface.createFromAsset(getAssets(), "fonts/Shoryuken.ttf");
+            Typeface TipoLetra = Typeface.createFromAsset(getAssets(),"fonts/Shadowofxizor.ttf");
             Vencedor.setTypeface(TipoLetra);
             Tentativa.setTypeface(TipoLetra);
             Vencedor.setText(R.string.YouWin);
@@ -322,7 +322,7 @@ public class Final extends AJ {
         Intent getFinal = getIntent();
 
         // mudar tipo de letra
-        Typeface TipoLetra = Typeface.createFromAsset(getAssets(), "fonts/Shoryuken.ttf");
+        Typeface TipoLetra = Typeface.createFromAsset(getAssets(),"fonts/Shadowofxizor.ttf");
 
 
         final TextView Round = (TextView) findViewById(R.id.Round);
@@ -334,14 +334,23 @@ public class Final extends AJ {
         final TextView Vj = (TextView) findViewById(R.id.vj);
         final TextView Va = (TextView) findViewById(R.id.Va);
         final Button Sair2 = (Button) findViewById(R.id.Sair2);
+        Sair2.setTypeface(TipoLetra);
+        Sair2.setTextSize(25);
         final Button JogarNovamente = (Button) findViewById(R.id.JN);
+        JogarNovamente.setTypeface(TipoLetra);
+        JogarNovamente.setTextSize(25);
         final RelativeLayout BG = (RelativeLayout) findViewById(R.id.bg);
 
         Round.setTypeface(TipoLetra);
+        Round.setTextSize(30);
         pregunta1.setTypeface(TipoLetra);
+        pregunta1.setTextSize(30);
         pregunta2.setTypeface(TipoLetra);
+        pregunta2.setTextSize(30);
         Android1.setTypeface(TipoLetra);
+        Android1.setTextSize(30);
         Android2.setTypeface(TipoLetra);
+        Android2.setTextSize(30);
 
 
 

@@ -4,7 +4,8 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin">
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/background_floating_material_dark">
 
     <TableRow
         android:layout_width="fill_parent"
@@ -30,7 +31,8 @@
         android:scrollbars="vertical"
         android:textStyle="bold"
         android:textSize="15sp"
-        android:textColor="#00a8a7" />
+        android:textColor="@color/themeRed"
+            android:background="@null" />
 
     </TableRow>
 
@@ -47,7 +49,8 @@
             android:text="@string/ExitScore"
             android:id="@+id/PreFinal"
             android:textStyle="bold"
-            android:textSize="15dp" />
+            android:textSize="15dp"
+            android:textColor="@color/themeRed" />
 
     </TableRow>
 
@@ -63,7 +66,11 @@
             android:text="@string/OK"
             android:id="@+id/OK"
             android:layout_gravity="center_vertical"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:textColor="@color/themeRed"
+            android:background="@color/button_material_dark"
+            android:textStyle="bold"
+            android:textSize="20dp" />
 
 
     </TableRow>

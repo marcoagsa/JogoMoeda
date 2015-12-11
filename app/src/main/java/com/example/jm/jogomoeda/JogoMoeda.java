@@ -85,9 +85,7 @@ public class JogoMoeda extends AppCompatActivity {
 
         // Titulo do Jogo com o tipo de letra defenido
         Typeface TipoLetra = Typeface.createFromAsset(getAssets(),"fonts/Shadowofxizor.ttf");
-
         TextView Titulo = (TextView) findViewById(R.id.Titulo);
-
         Titulo.setTypeface(TipoLetra);
         Titulo.setTextSize(80);
 
@@ -99,7 +97,7 @@ public class JogoMoeda extends AppCompatActivity {
         Bsair.setTypeface(TipoLetra);
         Bsair.setTextSize(30);
         Switch Som = (Switch) findViewById(R.id.Som);
-         ImageButton ScoreB = (ImageButton) findViewById(R.id.ScoreButton);
+        final ImageButton ScoreB = (ImageButton) findViewById(R.id.ScoreButton);
         final AudioManager audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
         // Função do Switch Sound
@@ -128,7 +126,7 @@ public class JogoMoeda extends AppCompatActivity {
                 TextView Data = (TextView) teste.findViewById(R.id.Data);
                 Button Ok = (Button) teste.findViewById(R.id.OK);
 
-                Typeface TipoLetra = Typeface.createFromAsset(getAssets(), "fonts/Shoryuken.ttf");
+                Typeface TipoLetra = Typeface.createFromAsset(getAssets(),"fonts/Shadowofxizor.ttf");
                 Data.setTypeface(TipoLetra);
 
 
@@ -185,7 +183,6 @@ public class JogoMoeda extends AppCompatActivity {
                 AppExit();
             }
         });
-       ;
     }
 
 }

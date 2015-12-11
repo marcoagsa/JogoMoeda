@@ -1,7 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#ffffffff">
+    android:background="@color/background_material_dark">
 
     <TableRow android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:text="@string/BestScore"
             android:id="@+id/Score"
-            android:textColor="#12bfe9"
+            android:textColor="@color/themeRed"
             android:textSize="15sp"
             android:textStyle="bold"
             android:padding="3dp"
@@ -38,7 +38,7 @@
             android:textOff="ON"
             android:textOn="OFF"
             android:textSize="15sp"
-            android:textColor="#12bfe9"
+            android:textColor="@color/themeRed"
             android:textStyle="bold"
             android:layout_gravity="center"
             android:layout_marginLeft="250dp"/>
@@ -52,7 +52,7 @@
         android:textSize="40sp"
         android:layout_height="wrap_content"
         android:id="@+id/Titulo"
-        android:textColor="#12bfe9"
+        android:textColor="@color/themeRed"
         android:textStyle="bold"
         android:textAlignment="center"
         android:layout_below="@+id/TabelaJogoMoeda"
@@ -73,7 +73,7 @@
         android:text="@string/Bjogar"
         android:id="@+id/Bjogar"
         android:background="@null"
-        android:textColor="#12bfe9"
+        android:textColor="@color/themeRed"
         android:textSize="20sp"
         android:textStyle="bold"
         android:layout_alignParentBottom="true"
@@ -88,7 +88,7 @@
         android:text="@string/BSair"
         android:id="@+id/Bsair"
         android:background="@null"
-        android:textColor="#12bfe9"
+        android:textColor="@color/themeRed"
         android:textSize="20sp"
         android:textStyle="bold"
         android:layout_below="@+id/Logo"

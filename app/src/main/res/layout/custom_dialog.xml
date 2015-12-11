@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content" android:layout_height="wrap_content"
-    android:id="@+id/Tentativas">
+    android:id="@+id/Tentativas"
+    android:clickable="false"
+    android:background="@null">
 
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/Vence"
-        android:textColor="#ffa2171f"
+        android:textColor="@color/themeRed"
         android:textSize="35sp"
         android:textStyle="bold"
         android:layout_marginTop="10dp"
@@ -27,7 +29,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/Tenta"
         android:layout_below="@+id/Vence"
-        android:textColor="#ff1cc5a7"
+        android:textColor="@color/themeRed"
         android:layout_margin="10dp"
         android:layout_centerInParent="true" />
 
@@ -44,7 +46,8 @@
             android:text="@string/preFinal"
             android:id="@+id/PreFinal"
             android:textStyle="bold"
-            android:textSize="15dp" />
+            android:textSize="15dp"
+            android:textColor="@color/themeRed" />
 
     </TableRow>
 
@@ -54,22 +57,22 @@
         android:layout_below="@id/linhatabela">
 
         <Button
-            style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/No"
             android:id="@+id/No"
             android:layout_gravity="center_vertical"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:background="@color/hint_foreground_material_dark" />
 
         <Button
-            style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Yes"
             android:id="@+id/Yes"
             android:layout_gravity="center_vertical"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:background="@color/hint_foreground_material_dark" />
     </TableRow>
 
 </RelativeLayout>
