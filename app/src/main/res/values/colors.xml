@@ -9,4 +9,5 @@
     <color name="themeWhite">#ffffffff</color>
     <color name="buttonNormal">@color/themeGray</color>
     <color name="buttonPressed">@color/themeBlue</color>
+    <color name="accent_material_dark">#ff4040</color>
 </resources>
