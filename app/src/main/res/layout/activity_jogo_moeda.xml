@@ -5,7 +5,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    android:background="@color/background_floating_material_dark">
+    android:background="@color/bright_foreground_inverse_material_light">
 
 
 
@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:text="@string/FinalScore"
             android:id="@+id/Score"
-            android:textColor="@color/themeRed"
+            android:textColor="@android:color/holo_blue_dark"
             android:textSize="15sp"
             android:textStyle="bold"
             android:layout_gravity="center" />
@@ -42,7 +42,7 @@
             android:textOff="ON"
             android:textOn="OFF"
             android:textSize="15sp"
-            android:textColor="@color/themeRed"
+            android:textColor="@android:color/holo_blue_dark"
             android:textStyle="bold"
             android:checked="false"
             android:layout_gravity="center"
@@ -56,7 +56,7 @@
         android:textSize="50sp"
         android:layout_height="wrap_content"
         android:id="@+id/Titulo"
-        android:textColor="@color/themeRed"
+        android:textColor="@android:color/holo_red_dark"
         android:textAlignment="center"
         android:gravity="center_horizontal"
         android:layout_marginTop="90dp"
@@ -80,14 +80,13 @@
         android:text="@string/Bjogar"
         android:id="@+id/Bjogar"
         android:background="@null"
-        android:textColor="@color/themeRed"
+        android:textColor="@android:color/holo_green_dark"
         android:textSize="20sp"
         android:textStyle="bold"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="50dp"
-        android:singleLine="false"
-        android:textColorLink="@color/highlighted_text_material_light" />
+        android:singleLine="false" />
 
     <Button
         android:layout_width="fill_parent"

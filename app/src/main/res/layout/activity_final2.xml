@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_floating_material_dark">
+    android:background="@color/bright_foreground_inverse_material_light">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -39,76 +39,75 @@
             android:layout_alignBottom="@+id/Lutador"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true" />
+    </RelativeLayout>
 
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/linhatabela"
-            android:background="@color/primary_dark_material_dark"
-            android:layout_below="@+id/Android">
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linhatabela"
+        android:background="@color/highlighted_text_material_dark"
+        android:layout_above="@+id/linhatabela2">
 
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textAppearance="?android:attr/textAppearanceMedium"
             android:id="@+id/Pregunta1"
             android:textStyle="bold"
             android:textSize="17sp"
-            android:textColor="#fffdfdfe"
+            android:textColor="@color/background_floating_material_dark"
             android:background="#00000000"
-            android:layout_marginLeft="5dp" />
+            android:layout_marginLeft="5dp"
+            android:typeface="serif" />
 
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textAppearance="?android:attr/textAppearanceMedium"
             android:id="@+id/Android1"
             android:textStyle="bold"
             android:textSize="17sp"
-            android:textColor="#fffdfdfe"
             android:background="#00000000"
             android:gravity="right"
-            android:layout_marginRight="5dp" />
+            android:layout_marginRight="5dp"
+            android:typeface="serif"
+            android:textColor="@color/background_floating_material_dark" />
 
-        </TableRow>
+    </TableRow>
 
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/linhatabela2"
-            android:background="@color/primary_material_light_1"
-            android:layout_below="@+id/linhatabela">
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linhatabela2"
+        android:background="@color/highlighted_text_material_dark"
+        android:layout_above="@+id/linhatabela3">
 
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textAppearance="?android:attr/textAppearanceMedium"
             android:id="@+id/Pregunta2"
             android:autoText="false"
             android:textStyle="bold"
             android:textSize="17sp"
-            android:textColor="#fffdfdfe"
+            android:textColor="@color/background_floating_material_dark"
             android:background="#00000000"
-            android:layout_marginLeft="5dp" />
+            android:layout_marginLeft="5dp"
+            android:typeface="serif" />
 
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textAppearance="?android:attr/textAppearanceMedium"
             android:id="@+id/Android2"
             android:textStyle="bold"
             android:textSize="17sp"
-            android:textColor="#fffdfdfe"
+            android:textColor="@color/background_floating_material_dark"
             android:background="#00000000"
             android:gravity="right"
-            android:layout_marginRight="5dp" />
-        </TableRow>
-
-    </RelativeLayout>
+            android:layout_marginRight="5dp"
+            android:typeface="serif" />
+    </TableRow>
 
     <TextView
         android:layout_width="wrap_content"
@@ -160,25 +159,26 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/linhatabela3"
-        android:layout_below="@+id/bg">
+        android:layout_alignParentBottom="true">
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/button_material_dark"
+            android:background="@android:color/holo_orange_dark"
             android:layout_weight="1"
             android:text="@string/BSair"
             android:id="@+id/Sair2"
-            android:textColor="@color/themeRed" />
+            android:textColor="@android:color/background_light"
+            android:typeface="normal" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@color/material_blue_grey_800"
+            android:background="@android:color/holo_orange_dark"
             android:text="@string/Bjogar2"
             android:id="@+id/JN"
-            android:textColor="@color/themeRed" />
+            android:textColor="@android:color/primary_text_dark" />
     </TableRow>
 
 </RelativeLayout>

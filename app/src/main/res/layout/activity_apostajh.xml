@@ -3,7 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_floating_material_dark"
+    android:background="@android:color/transparent"
     tools:context="com.example.jm.jogomoeda.Final">
 
 
@@ -16,7 +16,7 @@
         android:autoText="false"
         android:textStyle="bold"
         android:textSize="30dp"
-        android:textColor="@color/themeRed"
+        android:textColor="@android:color/holo_orange_dark"
         android:gravity="center_horizontal"
         android:layout_marginTop="30dp"
         android:layout_marginBottom="20dp" />
@@ -31,7 +31,7 @@
         android:textStyle="bold"
         android:textSize="30dp"
         android:nestedScrollingEnabled="false"
-        android:textColor="@color/background_floating_material_light" />
+        android:textColor="@color/highlighted_text_material_light" />
 
     <Button
         android:layout_width="fill_parent"
@@ -43,7 +43,7 @@
         android:textStyle="bold"
         android:textSize="30dp"
         android:layout_margin="5dp"
-        android:textColor="@color/background_floating_material_light" />
+        android:textColor="@color/highlighted_text_material_light" />
 
     <Button
         android:layout_width="fill_parent"
@@ -55,7 +55,7 @@
         android:textSize="30dp"
         android:textStyle="bold"
         android:layout_margin="5dp"
-        android:textColor="@color/background_floating_material_light" />
+        android:textColor="@color/highlighted_text_material_light" />
 
     <Button
         android:layout_width="fill_parent"
@@ -67,6 +67,6 @@
         android:textSize="30dp"
         android:layout_margin="5dp"
         android:layout_gravity="center_horizontal"
-        android:textColor="@color/background_floating_material_light" />
+        android:textColor="@color/highlighted_text_material_light" />
 
 </LinearLayout>

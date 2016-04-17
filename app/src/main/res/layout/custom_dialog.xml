@@ -3,7 +3,7 @@
     android:layout_width="wrap_content" android:layout_height="wrap_content"
     android:id="@+id/Tentativas"
     android:clickable="false"
-    android:background="@color/background_floating_material_dark">
+    android:background="@android:color/white">
 
 
     <TextView
@@ -64,7 +64,8 @@
             android:text="@string/No"
             android:id="@+id/No"
             android:layout_gravity="center_vertical"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:background="@color/highlighted_text_material_light" />
 
         <Button
             android:layout_width="wrap_content"
@@ -72,7 +73,8 @@
             android:text="@string/Yes"
             android:id="@+id/Yes"
             android:layout_gravity="center_vertical"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:background="@color/highlighted_text_material_light" />
     </TableRow>
 
 </RelativeLayout>

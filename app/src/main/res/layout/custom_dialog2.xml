@@ -5,7 +5,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@color/background_floating_material_dark">
+    android:background="@android:color/white">
 
     <TableRow
         android:layout_width="fill_parent"
@@ -31,8 +31,9 @@
         android:scrollbars="vertical"
         android:textStyle="bold"
         android:textSize="15sp"
-        android:textColor="@color/themeRed"
-            android:background="@null" />
+        android:textColor="@android:color/secondary_text_light"
+            android:background="@null"
+            android:typeface="monospace" />
 
     </TableRow>
 
@@ -68,7 +69,7 @@
             android:layout_gravity="center_vertical"
             android:layout_weight="1"
             android:textColor="@color/themeRed"
-            android:background="@color/button_material_dark"
+            android:background="@color/highlighted_text_material_light"
             android:textStyle="bold"
             android:textSize="20dp" />
 

@@ -1,31 +1,35 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:background="@color/background_material_dark">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/bright_foreground_inverse_material_light">
+
+
 
     <TableRow android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/TabelaJogoMoeda">
+        android:weightSum="1">
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/ScoreButton"
-            android:background="@null"
-            android:padding="10dp"
             android:src="@drawable/rating"
-            android:layout_gravity="center"
-            android:adjustViewBounds="false" />
+            android:background="@null"
+            android:padding="5dp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/BestScore"
+            android:text="@string/FinalScore"
             android:id="@+id/Score"
-            android:textColor="@color/themeRed"
+            android:textColor="@android:color/holo_blue_dark"
             android:textSize="15sp"
             android:textStyle="bold"
-            android:padding="3dp"
             android:layout_gravity="center" />
 
         <Switch
@@ -38,62 +42,67 @@
             android:textOff="ON"
             android:textOn="OFF"
             android:textSize="15sp"
-            android:textColor="@color/themeRed"
+            android:textColor="@android:color/holo_blue_dark"
             android:textStyle="bold"
+            android:checked="false"
             android:layout_gravity="center"
-            android:layout_marginLeft="250dp"/>
+            android:layout_marginLeft="350dp" />
 
     </TableRow>
-
 
     <TextView
         android:text="@string/Titulo"
         android:layout_width="fill_parent"
-        android:textSize="40sp"
         android:layout_height="wrap_content"
         android:id="@+id/Titulo"
-        android:textColor="@color/themeRed"
-        android:textStyle="bold"
+        android:textColor="@android:color/holo_red_dark"
         android:textAlignment="center"
-        android:layout_below="@+id/TabelaJogoMoeda"
-        android:gravity="center_horizontal" />
+        android:gravity="center_horizontal"
+        android:typeface="serif" />
 
     <ImageView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:id="@+id/Logo"
         android:src="@drawable/coins"
-        android:layout_below="@+id/Titulo"
-        android:layout_centerHorizontal="true"
-        android:layout_above="@+id/Bjogar" />
+        android:layout_below="@+id/Titulo"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Bjogar"
-        android:id="@+id/Bjogar"
-        android:background="@null"
-        android:textColor="@color/themeRed"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="85dp"
-        android:layout_marginEnd="85dp" />
 
-    <Button
-        android:layout_width="wrap_content"
+
+    <TableRow
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/BSair"
-        android:id="@+id/Bsair"
-        android:background="@null"
-        android:textColor="@color/themeRed"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_below="@+id/Logo"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="85dp"
-        android:layout_marginStart="85dp" />
+        android:layout_alignBottom="@+id/Logo">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/BSair"
+            android:id="@+id/Bsair"
+            android:background="@null"
+            android:textColor="@color/themeRed"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="05dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center|start|bottom" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Bjogar"
+            android:id="@+id/Bjogar"
+            android:background="@null"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="05dp"
+            android:layout_weight="1"
+            android:gravity="center|bottom|end" />
+    </TableRow>
+
+
+
 </RelativeLayout>
